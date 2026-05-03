@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #2b2b2b; line-height: 1.6; }
+header { background: #8b2a2a; color: #fff; padding: 1rem 2rem; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; }
+.brand { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.5px; }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav a { color: #fff; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+main { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+.hero { text-align: center; padding: 4rem 1rem; }
+.hero h1 { font-size: 2.4rem; margin-bottom: 0.5rem; color: #8b2a2a; }
+.cta { display: inline-block; margin-top: 1.5rem; background: #8b2a2a; color: #fff; padding: 0.8rem 1.8rem; text-decoration: none; border-radius: 4px; }
+
+section { padding: 2rem 0; border-top: 1px solid #eee; }
+section h2 { margin-bottom: 1rem; color: #8b2a2a; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.card { background: #faf6f0; padding: 1.5rem; border-radius: 6px; }
+.card h3 { margin-bottom: 0.5rem; }
+
+footer { text-align: center; padding: 2rem; color: #888; font-size: 0.9rem; border-top: 1px solid #eee; margin-top: 2rem; }
+
+.notfound { text-align: center; padding: 6rem 2rem; }
+.notfound h1 { font-size: 6rem; color: #8b2a2a; }
