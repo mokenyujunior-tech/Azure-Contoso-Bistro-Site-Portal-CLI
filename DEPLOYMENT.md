@@ -83,6 +83,8 @@ All steps below are performed through the Azure Portal unless stated otherwise. 
 
 After everything my site refused to load
 
+![Site Failing](Images/Site%20failing.png)
+
 Then I waited for about 15hours before my site came to life with the custom domain being used. Definitely it was my certificate not yet being propagated to all POPs because I received a "not secure" warning.
 
 ![Site Working](Images/Site%20working.png)
