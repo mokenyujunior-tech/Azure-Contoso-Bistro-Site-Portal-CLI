@@ -30,6 +30,7 @@ A professional, globally distributed website delivered without a single server.
 Small businesses with simple online presences, a homepage, a menu, a contact page, an about us, face one of two website problems that silently cost them customers every day.
 
 **Situation 1:** Using infrastructure that is bigger than the job requires. Small companies and startups running a simple marketing website on a cloud virtual machine pay for dedicated CPU, RAM, and storage 24/7, which sit idle the vast majority of the time. Research shows that the average VM runs at just 7–12% CPU utilization, meaning businesses are paying full price for capacity they almost never use.
+
 **Situation 2:** Cheap hosting that destroys customer trust. They chose a $3/month hosting plan. The site is slow, especially for visitors far from the data centre. Worse, the SSL/TLS certificate expired and nobody noticed. The browser now shows "Your connection is not private" on their homepage. Studies show 82% of users immediately leave an insecure site and 60% are unlikely to return. The business is losing customers not because of their product, but because of a certificate nobody renewed.
 
 Nearly 13% of active websites globally still have no TLS certificate. Nearly 30% that have one are misconfigured. Small businesses are among the most exposed, often without a dedicated IT team managing any of this. The result is slow sites, browser security warnings, and customers who leave before seeing a single product.
