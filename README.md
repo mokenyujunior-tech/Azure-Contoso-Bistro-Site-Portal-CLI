@@ -102,4 +102,6 @@ Before starting, you need:
 
 - **CSS not loading locally on 404.html:** The browser showed my website like a file meaning style.css wasn't functional.
 
+![404 Not Opening](Images/404%20not%20opening%20up.png)
+
 **Solution:** I added "/site" to the path "/css/style.css" making it "/site/css/style.css" and style.css worked. The site loaded with the set design. "/site" is where all my website files are.
