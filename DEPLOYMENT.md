@@ -34,6 +34,10 @@ All steps below are performed through the Azure Portal unless stated otherwise. 
 
 **Step 4:** Enabled static website hosting for both storage accounts
 
+![Static Site 1](Images/Static%20site%201.png)
+
+![Static Site 2](Images/Static%20site%202.png)
+
 **Step 5:** Uploaded site files to both $web containers using CLI and after uploading, I opened the primary endpoint URL in a browser and confirmed the site renders correctly with all styles loaded.
 
 ---
@@ -46,13 +50,19 @@ All steps below are performed through the Azure Portal unless stated otherwise. 
 
 - Domain name: mokcloud.site
 
+![DNS Zone](Images/DNS%20Zone.png)
+
 **Step 7:** Delegated nameservers at my registrar (Namecheap) to let my registrar know Azure is the one managing my domain now. DNS propagations take 1 – 4hours, worst case 48hours. Then I ran "nslookup -type=NS mokcloud.site" to verify it has propagated.
+
+![Nameservers](Images/Nameservers.png)
 
 ---
 
 ## Phase 4: Deploy Azure Front Door Standard
 
 **Step 8:** Created the Front Door profile
+
+![Front Door Profile](Images/Front%20Door%20Profile.png)
 
 **Step 9:** Create a Route, Origin Group and the origins.
 
@@ -70,6 +80,8 @@ All steps below are performed through the Azure Portal unless stated otherwise. 
 
 - Wait for provisioning state to show succeeded
 
+![Route, Origin Groups, Origins](Images/Route%2C%20Origin%20Groups%2C%20Origins.png)
+
 **Step 10:** Added custom domains
 
 - mokcloud.site (apex domain)
@@ -84,9 +96,13 @@ All steps below are performed through the Azure Portal unless stated otherwise. 
 
 **Step 11:** Updated the route to include all domains
 
+![Route Connecting to Domains](Images/Route%20Connecting%20to%20Domains.png)
+
 After everything my site refused to load
 
 Then I waited for about 15hours before my site came to life with the custom domain being used. Definitely it was my certificate not yet being propagated to all POPs because I received a "not secure" warning.
+
+![Site Working](Images/Site%20working.png)
 
 ---
 
@@ -104,6 +120,14 @@ Then I waited for about 15hours before my site came to life with the custom doma
 
 **Step 15:** Configured diagnostic settings on Front Door to transfer all logs and metrics to my log analytics workspace (law-mokcloud-prod)
 
+![Log Analytics Diagnostics](Images/law%20diagnostics.png)
+
 **Step 16:** Created a Cost Management Budget alert to receive an alert when a threshold is breached
 
+![Budget Alert](Images/Budget%20alert.png)
+
 **Step 17:** Disabled the primary origin and after 5 mins the site was still up confirming failover at play.
+
+![Disabling Origins](Images/Disabling%20Origins.png)
+
+![Site Running After Disabling Origin](Images/Site%20running%20after%20disabling%20origin.png)
