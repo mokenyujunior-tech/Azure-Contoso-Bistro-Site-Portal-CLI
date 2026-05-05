@@ -8,7 +8,7 @@ Blob Storage · Azure Front Door Standard · Custom Domain · HTTPS · Cost Moni
 
 ## 1. Architecture
 
-![Architecture Diagram](images/architecture.png)
+![Architecture Diagram](Images/Architecture%20Diaghram.png)
 
 ---
 
