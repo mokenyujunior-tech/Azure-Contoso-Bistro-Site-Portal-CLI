@@ -1,6 +1,6 @@
 # Deployment Steps
 
-All steps below are performed through the Azure Portal unless stated otherwise. No CLI or Terraform required.
+All steps below are performed through the Azure Portal unless stated otherwise. No Terraform used.
 
 ---
 
