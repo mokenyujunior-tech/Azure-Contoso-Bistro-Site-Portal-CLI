@@ -48,7 +48,7 @@ By hosting the website on Azure Blob Storage and delivering it through Azure Fro
 
 ---
 
-## 5. Prerequisites
+## 4. Prerequisites
 
 Before starting, you need:
 
@@ -58,7 +58,7 @@ Before starting, you need:
 
 ---
 
-## 6. Problems Faced and Solutions
+## 5. Problems Faced and Solutions
 
 ### Problems
 
