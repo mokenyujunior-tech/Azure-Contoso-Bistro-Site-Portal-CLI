@@ -23,7 +23,7 @@ A professional, globally distributed website delivered without a single server.
 
 ---
 
-## 4. The Business Problem This Project Solves
+## 3. The Business Problem This Project Solves
 
 ### The Problem
 
